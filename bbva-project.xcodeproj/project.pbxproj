@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		BB72D4A1242D53C9005499AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72D4A0242D53C9005499AB /* AppDelegate.swift */; };
 		BB72D4A3242D53C9005499AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72D4A2242D53C9005499AB /* SceneDelegate.swift */; };
-		BB72D4A5242D53C9005499AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72D4A4242D53C9005499AB /* ViewController.swift */; };
+		BB72D4A5242D53C9005499AB /* WelcomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72D4A4242D53C9005499AB /* WelcomePageVC.swift */; };
 		BB72D4A8242D53C9005499AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB72D4A6242D53C9005499AB /* Main.storyboard */; };
 		BB72D4AA242D53DC005499AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB72D4A9242D53DC005499AB /* Assets.xcassets */; };
 		BB72D4AD242D53DC005499AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB72D4AB242D53DC005499AB /* LaunchScreen.storyboard */; };
 		BB72D4B8242D53DD005499AB /* bbva_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72D4B7242D53DD005499AB /* bbva_projectTests.swift */; };
 		BB72D4C3242D53DD005499AB /* bbva_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72D4C2242D53DD005499AB /* bbva_projectUITests.swift */; };
+		BB72D4D2242F7338005499AB /* LoginFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72D4D1242F7338005499AB /* LoginFormVC.swift */; };
+		BB72D4D724323235005499AB /* BentonSansBBVA-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB72D4D424323233005499AB /* BentonSansBBVA-Light.ttf */; };
+		BB72D4D824323235005499AB /* BentonSansBBVA-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB72D4D524323234005499AB /* BentonSansBBVA-Medium.ttf */; };
+		BB72D4D924323235005499AB /* BentonSansBBVA-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB72D4D624323234005499AB /* BentonSansBBVA-Book.ttf */; };
+		BB72D4DB243238C8005499AB /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72D4DA243238C8005499AB /* Styles.swift */; };
+		BB72D4DE24343141005499AB /* CredentialStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72D4DD24343141005499AB /* CredentialStorage.swift */; };
+		BB72D4E024346150005499AB /* WelcomePageShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB72D4DF24346150005499AB /* WelcomePageShow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +45,7 @@
 		BB72D49D242D53C9005499AB /* bbva-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bbva-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB72D4A0242D53C9005499AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB72D4A2242D53C9005499AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BB72D4A4242D53C9005499AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB72D4A4242D53C9005499AB /* WelcomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageVC.swift; sourceTree = "<group>"; };
 		BB72D4A7242D53C9005499AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB72D4A9242D53DC005499AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB72D4AC242D53DC005499AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +56,13 @@
 		BB72D4BE242D53DD005499AB /* bbva-projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bbva-projectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB72D4C2242D53DD005499AB /* bbva_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bbva_projectUITests.swift; sourceTree = "<group>"; };
 		BB72D4C4242D53DD005499AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB72D4D1242F7338005499AB /* LoginFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormVC.swift; sourceTree = "<group>"; };
+		BB72D4D424323233005499AB /* BentonSansBBVA-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BentonSansBBVA-Light.ttf"; sourceTree = "<group>"; };
+		BB72D4D524323234005499AB /* BentonSansBBVA-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BentonSansBBVA-Medium.ttf"; sourceTree = "<group>"; };
+		BB72D4D624323234005499AB /* BentonSansBBVA-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BentonSansBBVA-Book.ttf"; sourceTree = "<group>"; };
+		BB72D4DA243238C8005499AB /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		BB72D4DD24343141005499AB /* CredentialStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialStorage.swift; sourceTree = "<group>"; };
+		BB72D4DF24346150005499AB /* WelcomePageShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageShow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +113,16 @@
 		BB72D49F242D53C9005499AB /* bbva-project */ = {
 			isa = PBXGroup;
 			children = (
+				BB72D4DC2434311E005499AB /* Storage */,
+				BB72D4D324323208005499AB /* Resources */,
+				BB72D4D0242D65CF005499AB /* ViewControllers */,
 				BB72D4A0242D53C9005499AB /* AppDelegate.swift */,
-				BB72D4A2242D53C9005499AB /* SceneDelegate.swift */,
-				BB72D4A4242D53C9005499AB /* ViewController.swift */,
 				BB72D4A6242D53C9005499AB /* Main.storyboard */,
+				BB72D4A2242D53C9005499AB /* SceneDelegate.swift */,
 				BB72D4A9242D53DC005499AB /* Assets.xcassets */,
 				BB72D4AB242D53DC005499AB /* LaunchScreen.storyboard */,
 				BB72D4AE242D53DC005499AB /* Info.plist */,
+				BB72D4DA243238C8005499AB /* Styles.swift */,
 			);
 			path = "bbva-project";
 			sourceTree = "<group>";
@@ -126,6 +143,34 @@
 				BB72D4C4242D53DD005499AB /* Info.plist */,
 			);
 			path = "bbva-projectUITests";
+			sourceTree = "<group>";
+		};
+		BB72D4D0242D65CF005499AB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB72D4A4242D53C9005499AB /* WelcomePageVC.swift */,
+				BB72D4D1242F7338005499AB /* LoginFormVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BB72D4D324323208005499AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB72D4D624323234005499AB /* BentonSansBBVA-Book.ttf */,
+				BB72D4D424323233005499AB /* BentonSansBBVA-Light.ttf */,
+				BB72D4D524323234005499AB /* BentonSansBBVA-Medium.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BB72D4DC2434311E005499AB /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				BB72D4DD24343141005499AB /* CredentialStorage.swift */,
+				BB72D4DF24346150005499AB /* WelcomePageShow.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +280,9 @@
 				BB72D4AD242D53DC005499AB /* LaunchScreen.storyboard in Resources */,
 				BB72D4AA242D53DC005499AB /* Assets.xcassets in Resources */,
 				BB72D4A8242D53C9005499AB /* Main.storyboard in Resources */,
+				BB72D4D924323235005499AB /* BentonSansBBVA-Book.ttf in Resources */,
+				BB72D4D824323235005499AB /* BentonSansBBVA-Medium.ttf in Resources */,
+				BB72D4D724323235005499AB /* BentonSansBBVA-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB72D4A5242D53C9005499AB /* ViewController.swift in Sources */,
+				BB72D4E024346150005499AB /* WelcomePageShow.swift in Sources */,
+				BB72D4A5242D53C9005499AB /* WelcomePageVC.swift in Sources */,
+				BB72D4DB243238C8005499AB /* Styles.swift in Sources */,
 				BB72D4A1242D53C9005499AB /* AppDelegate.swift in Sources */,
+				BB72D4D2242F7338005499AB /* LoginFormVC.swift in Sources */,
+				BB72D4DE24343141005499AB /* CredentialStorage.swift in Sources */,
 				BB72D4A3242D53C9005499AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,24 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vse-W1-ONm">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="BentonSansBBVA-Book.ttf">
+            <string>Munged-g25iYt3pJ7</string>
+        </array>
+        <array key="BentonSansBBVA-Light.ttf">
+            <string>Munged-W8uz6Ibr9r</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome PageVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="WelcomePageVC" customModule="bbva_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVc-BR-VAG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="327"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dz-VQ-scf">
+                                <rect key="frame" x="20" y="486" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nYc-6v-SgD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Munged-W8uz6Ibr9r" family="FB Web Use Only" pointSize="17"/>
+                                <state key="normal" title="Acceder"/>
+                                <connections>
+                                    <action selector="accederBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2yp-GW-ZTn"/>
+                                    <segue destination="Qjs-8B-Z0g" kind="show" id="cjE-xR-Abe"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="uHi-vR-769">
+                                <rect key="frame" x="20" y="387" width="560" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.27843137254901962" green="0.74117647058823533" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7dz-VQ-scf" secondAttribute="trailing" constant="20" id="6aL-5u-6qw"/>
+                            <constraint firstItem="uHi-vR-769" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6ij-vB-vQk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7dz-VQ-scf" secondAttribute="bottom" constant="20" id="6zh-oc-48O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uHi-vR-769" secondAttribute="trailing" constant="20" id="ADs-3n-VUH"/>
+                            <constraint firstItem="7dz-VQ-scf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CLt-bo-tse"/>
+                            <constraint firstItem="lVc-BR-VAG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IBK-PL-pxw"/>
+                            <constraint firstItem="lVc-BR-VAG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZF0-bS-5Sz"/>
+                            <constraint firstItem="uHi-vR-769" firstAttribute="top" secondItem="lVc-BR-VAG" secondAttribute="bottom" constant="60" id="dYS-wA-NAV"/>
+                            <constraint firstItem="7dz-VQ-scf" firstAttribute="top" secondItem="uHi-vR-769" secondAttribute="bottom" constant="62" id="e4Z-NB-1X9"/>
+                            <constraint firstItem="lVc-BR-VAG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fWD-5b-SlB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="4QE-Ul-aCd"/>
+                    <connections>
+                        <outlet property="accederBtn" destination="7dz-VQ-scf" id="OZv-Lu-18N"/>
+                        <outlet property="pageControl" destination="uHi-vR-769" id="3iC-Z3-zj4"/>
+                        <outlet property="scrollView" destination="lVc-BR-VAG" id="eYa-8M-Qoy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
+        </scene>
+        <!--Login FormVC-->
+        <scene sceneID="U31-eB-ruB">
+            <objects>
+                <viewController storyboardIdentifier="loginFormID" id="Qjs-8B-Z0g" customClass="LoginFormVC" customModule="bbva_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="DZG-yU-lZK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DdZ-uL-e7J">
+                                <rect key="frame" x="20" y="64" width="302" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Munged-g25iYt3pJ7" family="FB Web Use Only" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ihK-Fh-M45">
+                                <rect key="frame" x="20" y="122" width="311" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Munged-g25iYt3pJ7" family="FB Web Use Only" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recordar mis datos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zk-xU-Tq3">
+                                <rect key="frame" x="20" y="250" width="142" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Munged-g25iYt3pJ7" family="FB Web Use Only" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3tj-w3-BRc">
+                                <rect key="frame" x="345" y="250" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPj-F8-xww">
+                                <rect key="frame" x="132" y="370" width="150" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Munged-g25iYt3pJ7" family="FB Web Use Only" pointSize="17"/>
+                                <state key="normal" title="Ingresar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="accederBtnTapped:" destination="Qjs-8B-Z0g" eventType="touchUpInside" id="qpV-fb-VwK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjR-21-Hpo">
+                                <rect key="frame" x="134" y="745" width="146" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Munged-g25iYt3pJ7" family="FB Web Use Only" pointSize="16"/>
+                                <state key="normal" title="¿Olvidaste tu clave?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7K-uO-l2K">
+                                <rect key="frame" x="132" y="445" width="150" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Munged-g25iYt3pJ7" family="FB Web Use Only" pointSize="17"/>
+                                <state key="normal" title="Token Digital">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="clave de acceso" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JaQ-wc-Emz">
+                                <rect key="frame" x="20" y="192" width="326" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Munged-g25iYt3pJ7" family="FB Web Use Only" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Yf5-4c-86L"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="26j-ru-cAk"/>
+                    <connections>
+                        <outlet property="accountTextField" destination="ihK-Fh-M45" id="1kE-St-b38"/>
+                        <outlet property="documentTypeTextField" destination="DdZ-uL-e7J" id="V4z-2y-DpI"/>
+                        <outlet property="ingresarBtn" destination="uPj-F8-xww" id="rFU-TS-LcV"/>
+                        <outlet property="olvidasteTuClaveBtn" destination="rjR-21-Hpo" id="nEL-VU-OYM"/>
+                        <outlet property="passwordTextField" destination="JaQ-wc-Emz" id="c5m-La-nYP"/>
+                        <outlet property="recordarCredencialesLbl" destination="9Zk-xU-Tq3" id="kwf-F6-ccF"/>
+                        <outlet property="recordarCredencialesSwitch" destination="3tj-w3-BRc" id="lyw-RG-NyO"/>
+                        <outlet property="tokenDigitalBtn" destination="e7K-uO-l2K" id="6ay-Zo-ZRE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Azu-Um-ccx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1873.913043478261" y="120.53571428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xFc-b4-QtA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vse-W1-ONm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="CcM-Z2-Q4Y">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.35686274509803922" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gK8-qA-O9I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fwn-2U-OvD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
         </scene>
     </scenes>
 </document>
